@@ -6,7 +6,9 @@
 
 #プログラム制作過程（準備中）
 1:Cmake、visualstudioのC++ツール
+
 2pyopenjtalkのライブラリのインストール（むず過ぎ）
+
 3,,,,,
 
 
