@@ -5,13 +5,14 @@
 #コードスペース（容量大きいファイルを除く）：https://shiny-xylophone-7v9vpq9xr9q6cpvvw.github.dev/
 
 #プログラムの環境
+#（フロントエンド）
+#・pyqt5
+#・Qt designer
 
-（フロントエンド）
-/pyqt5
+#（バックエンド）
+#・python
 
-/Qt designer
-（バックエンド）
-/python
+
 #プログラム制作過程（準備中）
 
 1:Cmake、visualstudioのC++ツール
