@@ -1,0 +1,59 @@
+Pityna System Dialogue Log: 2023-07-13 21:07::27
+> 暑くって寝られないよ
+pityna:Repeat?> 暑くって寝られないよってなに？
+> とんでもなく暑いんだ
+pityna:Pattern> あれってどうなったの？
+> 何のこと？もう夜だけど
+pityna:Pattern> 憶えてないなぁ
+> 朝が来て昼になって夜が来るんだ
+pityna:Pattern> あれれ
+> そういうもんさ、一日ってね
+pityna:Random> 面倒くさーい
+Pityna System Dialogue Log: 2023-07-19 16:07::56
+> あ、雨降ってきた！自転車外に出しっぱだ！
+pityna:Pattern> 電動アシストほしいな～
+> 電動アシスト付きの自転車いいよね
+pityna:Random> 何のこと？もう夜だけど
+> 雨降ってきたんだよ
+pityna:Pattern> あ、雨降ってきた！自転車外に出しっぱだ！
+> チャリの放置はいけません！
+pityna:Pattern> 電動アシスト付きの自転車いいよね
+> それさっき言ったよー
+pityna:Pattern> 電動アシスト付きの自転車いいよね
+Pityna System Dialogue Log: 2023-07-21 11:07::55
+> お腹すいた、パスタ食べたい
+pityna:Pattern> そういうもんさ、一日ってね
+> パスタならカルボナーラがいいな
+pityna:Template> パスタでカルボナーラ食べたりする？
+> もちろん、パスタはカルボナーラで決まり！
+pityna:Pattern> お腹すいた、パスタ食べたい
+> トマトのリゾットもいいよね
+pityna:Template> トマトをリゾットしなくちゃね
+Pityna System Dialogue Log: 2023-07-23 09:10::27
+> あなたはトークが好きなプログラムの女の子です
+pityna：Random> ヘビメタ好き？
+> あなたはおしゃべりが好きなPythonのプログラムです
+pityna：Random> ヘビメタ好き？
+> 私は牛丼が大好きなしがないプログラマーです
+pityna：Random> 晴れたね
+> なるほど、トークが好きなプログラムの女の子なんだ
+pityna：Markov> ヘビメタ好き？
+> ヘビーなサウンドの重厚なロックが好きな青年です
+pityna：Random> スポーツって好き？
+> ロックは好きかな？
+pityna：Random> ヘビメタ好き？
+> そうか、ヘビーメタルが好きな女の子っていいよね
+Pityna System Dialogue Log: 2023-07-24 13:07::33
+> こんにちは、プログラムの女の子
+pityna:Pattern> とんでもなく暑いんだ
+> 暑くてもロックを聴こうよ
+pityna:Random> ヘビメタ好き？
+> ヘビーメタル大好きだよ！
+pityna:Markov> そうか、ヘビーメタルが好きなプログラムの女の子なんだ
+Pityna System Dialogue Log: 2024-02-29 16:02::52
+> おはよう
+pityna:Markov> だってボットだもん
+> どういう意味？
+pityna:Markov> めちゃいいね！
+> そうかな？
+pityna:Pattern> パスタならカルボナーラがいいな
