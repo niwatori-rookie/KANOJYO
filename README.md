@@ -28,7 +28,11 @@
 
 #プログラムの詳細
 
-。。
+・VALL-E-Xを使用そして新たにsound.pyを実装し、mainwiodows.pyにimportをした。
+
+・VALL-E-Xの音声処理があまりにも重たかったので、並列処理（threading）を実装した。
+
+※参考サイト：https://zenn.dev/nekoallergy/articles/py-advance-threading-01
 
 #その他
 
