@@ -19,11 +19,11 @@
 
 #環境構築（準備中）
 
-1:Cmake、visualstudioのC++ツール
+1:Cmake、visualstudioのC++ツール（VScodeとの連携も必要だかすでにしてある。）
 
 2pyopenjtalkのライブラリのインストール（むず過ぎ）
 
-3,,,,,
+3cythonのライブラリのインストール
 
 
 #プログラムの詳細
