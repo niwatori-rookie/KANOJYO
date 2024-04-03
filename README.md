@@ -37,8 +37,17 @@
 #その他
 
 3階マルコフ連鎖、形態素解析を採用。
-Web Speech APIとの連携も予定。
+Web Speech APIとの連携（既に実行済み）。
 
 
-![スクリーンショット 2024-03-29 195913](https://github.com/niwatori-rookie/kanojyo_talk-Ver.-/assets/138978518/acb63295-3eee-4617-ad7d-fcb16ef71f21)
+#動画等
+
+
+
+![image](https://github.com/niwatori-rookie/kanojyo_talk-Ver.-/assets/138978518/d36fd2dc-37d2-4a2e-a309-bc0d159690be)
+
+
+
+
+
 
