@@ -34,18 +34,24 @@
 
 ※参考サイト：https://zenn.dev/nekoallergy/articles/py-advance-threading-01
 
-#その他
+・3階マルコフ連鎖、形態素解析を採用。
 
-3階マルコフ連鎖、形態素解析を採用。
+・Web Speech APIとの連携（既に実行済み）。｛tryとexceptによる例外処理｝
 
-Web Speech APIとの連携（既に実行済み）。｛tryとexceptによる例外処理｝
+※参考サイト：https://enjoy-life-fullest.com/2024/01/06/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91-python%E3%81%A7%E8%AD%B0%E4%BA%8B%E9%8C%B2%E4%BD%9C%E6%88%90%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0/
 
 
-#動画等
+#UI画面
 
 
 
 ![image](https://github.com/niwatori-rookie/kanojyo_talk-Ver.-/assets/138978518/d36fd2dc-37d2-4a2e-a309-bc0d159690be)
+
+
+#動画によるシュミレーション
+
+
+
 
 
 
