@@ -5,6 +5,8 @@ from PyQt5 import QtGui
 import qt_pitynaui
 import pityna
 import sound
+import threading
+import speech_recognition as sr
 
 #自身で作成したsound.pyをインポート
 
@@ -36,6 +38,9 @@ class MainWindow(QtWidgets.QMainWindow):
         
     def putlog(self, str):
         """QListWidgetクラスのaddItem()でログをリストに追加する
+
+
+    
 
         Args:
             str (str): _ユーザーの入力または応答メッセージをログ用に整形した文字列
@@ -103,8 +108,9 @@ class MainWindow(QtWidgets.QMainWindow):
         
         if not value:
             # 未入力の場合は音声を再生して「なに?」と表示
-            sound.Music().make_music("なに?")
-            sound.Music().play_music()
+            self.music.make_music("なに?")
+            #{スレッドを使って音声を再生}
+            threading.Thread(target=self.music.play_music).start()
             self.ui.LabelResponce.setText('なに?')
         else:
             # 発言があれば対話オブジェクトを実行
@@ -120,11 +126,14 @@ class MainWindow(QtWidgets.QMainWindow):
             self.ui.LineEdit.clear()
 
             # 応答メッセージを音声に変換、再生
-            sound.Music().make_music(response)
-            sound.Music().play_music()
+            self.music.make_music(response)
+            #{スレッドを使って音声を再生}
+            threading.Thread(target=self.music.play_music).start()
+
         
-        # ピティナのイメージを現在の機嫌値に合わせる
-        self.change_looks()
+            # ピティナのイメージを現在の機嫌値に合わせる
+            self.change_looks()
+
         
     def closeEvent(self, event):
         """ウィジェットを閉じるclose()メソッド実行時にQCloseEventによって呼ばれる
@@ -167,3 +176,50 @@ class MainWindow(QtWidgets.QMainWindow):
         """
         # ラジオボタンの状態を保持するactionの値をFalseにする
         self.action = False
+
+    def recognize_speech_continuous(self):
+        """音声認識を行うメソッド
+        
+        """
+        # 音声認識を行う
+        recognizer = sr.Recognizer()
+        self.cancel_flag = False
+        with sr.Microphone() as source:
+            # バックグラウンドノイズに対応するために、環境ノイズを調整
+            recognizer.adjust_for_ambient_noise(source)
+    
+        
+            try:
+                # ユーザーの声を記録
+                audio = recognizer.listen(source, timeout=5)
+                # GoogleのWeb Speech APIを使用して音声をテキストに変換
+                text = recognizer.recognize_google(audio, language="ja-JP") 
+
+
+                if text:
+                    # 発言があれば対話オブジェクトを実行
+                    # ユーザーの発言を引数にしてdialogue()を実行し、応答メッセージを取得
+                    response = self.pityna.dialogue(text)
+                    # ピティナの応答メッセージをラベルに出力
+                    self.ui.LabelResponce.setText(response)
+                    # プロンプト記号にユーザーの発言を連結してログ用のリストに出力
+                    self.putlog('> ' + text)
+                    # ピティナのプロンプト記号に応答メッセージを連結してログ用のリストに出力
+                    self.putlog(self.prompt() + response)
+                    # QLineEditクラスのclear()メソッドでラインエディットのテキストをクリア
+                    self.ui.LineEdit.clear()
+
+                    # 応答メッセージを音声に変換、再生
+                    self.music.make_music(response)
+                    #{スレッドを使って音声を再生}
+                    threading.Thread(target=self.music.play_music).start()            
+                    # ピティナのイメージを現在の機嫌値に合わせる
+                    self.change_looks()
+
+            except sr.UnknownValueError:
+                self.ui.LabelResponce.setText('もう一度頼むわ')
+                text = None
+            except sr.WaitTimeoutError:
+                # タイムアウト時の処理
+                self.ui.LabelResponce.setText('タイムアウト')
+                text = None
