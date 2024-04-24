@@ -21,7 +21,7 @@
 
 1:Cmake、visualstudioのC++ツール（VScodeとの連携も必要だかすでにしてある。）
 
-2pyopenjtalkのライブラリのインストール（むず過ぎ）
+2pyopenjtalkのライブラリのインストール（むず過ぎ）  パッケージのコード：pip install pyopenjtalk --no-build-isolation
 
 3cythonのライブラリのインストール
 
