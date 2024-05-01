@@ -39,6 +39,9 @@ pip install pyopenjtalk --no-build-isolation
 3cythonのライブラリのインストール
 
 
+<br>
+
+
 ※※2の参照先（pyopenjtalkのgithubのReadmeから）※※
 
 ビルド要件
