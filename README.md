@@ -8,13 +8,13 @@
 
 ＃＃＃（フロントエンド）＃＃＃
 
-・pyqt5
++ pyqt5
 
-・Qt designer
++ Qt designer
 
 ＃＃＃（バックエンド）＃＃＃
 
-・python
++ python
 
 
 ### 環境構築（準備中）
@@ -25,7 +25,7 @@
 
 2pyopenjtalkのライブラリのインストール(難しい)　　　
 
-Some basic python commands are:
+**Some basic python commands are:**
 ```
 pip install pyopenjtalk --no-build-isolation
 ```
@@ -52,15 +52,15 @@ Python パッケージは、open_jtalk および hts_engine_API の Python バ�
 
 ---------------------------------------------------------------------------
 
-・VALL-E-Xを使用そして新たにsound.pyを実装し、mainwiodows.pyにimportをした。
++ VALL-E-Xを使用そして新たにsound.pyを実装し、mainwiodows.pyにimportをした。
 
-・VALL-E-Xの音声処理があまりにも重たかったので、並列処理（threading）を実装した。
++ VALL-E-Xの音声処理があまりにも重たかったので、並列処理（threading）を実装した。
 
 ※参考サイト：https://zenn.dev/nekoallergy/articles/py-advance-threading-01
 
-・3階マルコフ連鎖、形態素解析を採用。
++ 3階マルコフ連鎖、形態素解析を採用。
 
-・Web Speech APIとの連携（既に実行済み）。｛tryとexceptによる例外処理｝
++ Web Speech APIとの連携（既に実行済み）。｛tryとexceptによる例外処理｝
 
 ※参考サイト：https://enjoy-life-fullest.com/2024/01/06/%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91-python%E3%81%A7%E8%AD%B0%E4%BA%8B%E9%8C%B2%E4%BD%9C%E6%88%90%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0/
 
@@ -83,7 +83,7 @@ Python パッケージは、open_jtalk および hts_engine_API の Python バ�
 
 ---------------------------------------------------------------------------
 
-・APIなどを導入することで、話しているうちに認知症の度合いを判断してくれるような機能を搭載する。
++ APIなどを導入することで、話しているうちに認知症の度合いを判断してくれるような機能を搭載する。
 
 
 
