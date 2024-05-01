@@ -54,6 +54,12 @@ Python パッケージは、open_jtalk および hts_engine_API の Python バ�
 
 <br>
 
+※※2の参考サイト※※
+
+https://self-development.info/python%E3%81%8B%E3%82%89open-jtalk%E3%82%92%E6%93%8D%E4%BD%9C%E3%81%99%E3%82%8B%E3%80%90%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%AE%E9%9F%B3%E5%A3%B0%E5%90%88%E6%88%90/
+
+
+<br>
 
 ### プログラムの詳細
 
