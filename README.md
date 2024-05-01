@@ -21,9 +21,24 @@
 
 1:Cmake、visualstudioのC++ツール（VScodeとの連携も必要だかすでにしてある。）
 
-2pyopenjtalkのライブラリのインストール（むず過ぎ）  パッケージのコード：pip install pyopenjtalk --no-build-isolation
+2pyopenjtalkのライブラリのインストール(難しい)　　　パッケージのコード：pip install pyopenjtalk --no-build-isolation
 
 3cythonのライブラリのインストール
+
+
+※※2の参照先（pyopenjtalkのgithubのReadmeから）※※
+
+ビルド要件
+Python パッケージは、open_jtalk および hts_engine_API の Python バインディングを作成するために cython に依存しています。 pyopenjtalk をビルドしてインストールするには、次のツールが必要です。
+
+・C/C++ コンパイラ (C/C++ 拡張機能を構築するため)
+
+・cmake
+
+・cython
+
+---------------------------------------------------------------------------
+
 
 
 #プログラムの詳細
