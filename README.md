@@ -103,6 +103,11 @@ https://self-development.info/python%E3%81%8B%E3%82%89open-jtalk%E3%82%92%E6%93%
 ---------------------------------------------------------------------------
 
 
+https://github.com/niwatori-rookie/kanojyo_talk-Ver.-/assets/138978518/0a4411c5-4045-4824-8c74-0aeeb135028a
+
+
+
+
 <br>
 
 
